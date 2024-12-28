@@ -1,0 +1,55 @@
+@font-face {
+    font-family: 'Love';
+    src: url('True Stories.ttf');
+    font-size: normal;
+    font-weight: normal;
+}
+
+body {
+    background-image: radial-gradient(ellipse at center,rgb(249, 245, 246), rgb(223, 169, 178), rgb(248, 117, 139), rgb(255, 116, 139), rgb(255, 73, 103));
+    height: 100vh;
+    margin: 0;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-image 1s ease-in-out; 
+
+}
+
+main{
+    position: relative;
+    text-align: center;
+    font-family: 'Love', Arial, Helvetica, sans-serif;
+    font-weight: normal;
+}
+
+h2 {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-175%) translateY(-75%);
+    z-index: -1;
+    font-size: 10em;
+    -webkit-text-stroke: 2px rgb(255, 0, 0); 
+    color: rgba(255, 255, 255, 0);
+    font-weight: normal;
+    transition: opacity 1s ease;
+}
+
+h1 {
+    font-size: 5em;
+    text-align: center;
+    -webkit-text-stroke: 2px rgb(255, 81, 81); 
+    color: rgba(255, 255, 255, 0);
+    font-weight: normal;
+    transition: opacity 1s ease;
+}
+
+.fade-out{
+    opacity: 0;
+}
+
+.fade-in{
+    opacity: 1;
+}
